@@ -16,7 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="flex px-10 py-10 justify-between fixed top-0 left-0 w-full bg-white">
+          <h1 className="text-black text-4xl font-bold">
+            Help<span className="text-teal-500">Hotline</span>
+          </h1>
+        </nav>
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
